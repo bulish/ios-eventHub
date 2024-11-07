@@ -1,9 +1,8 @@
 'use client'
 
-import { Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 
-export function Home() {
+export default function Home() {
     // Použití useSearchParams pro načtení parametrů z URL
     const searchParams = useSearchParams();
     const name = searchParams.get('name') || "Unknown User";
@@ -31,12 +30,4 @@ export function Home() {
             </div>
         </div>
     );
-}
-
-export default function PageWrapper() {
-  return (
-    <Suspense fallback={<div>Loading...</div>}>
-      <Home />
-    </Suspense>
-  );
 }
