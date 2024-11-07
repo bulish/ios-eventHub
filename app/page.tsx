@@ -13,7 +13,7 @@ export function Home() {
     return (
         <div className="container">
             <h1 className="title">Event<span>Hub</span></h1>
-            <h2 className="subtitle">You're Invited!</h2>
+            <h2 className="subtitle">You&apos;re Invited!</h2>
             
             <div className="infoBox">
                 <p className="label">👤 Name:</p>
